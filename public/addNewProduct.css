@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #F9F1E9;
+  font-family: "Noto Serif", serif;
+}
+.navBar{
+  margin-top: 1rem;
+  overflow: hidden;
+  background-color: transparent;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+.left-navbar, .right-navbar{
+  display: flex;
+  justify-content: space-around;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+}
+a{
+  color: #392A2A;
+}
+.logo img{
+  height: 4vw;
+  width: 4vw;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title{
+  font-size: clamp(20px, 3vw, 32px);
+  margin-top: 2rem;
+}
+.bigBox-1{
+  width: 25vw;
+  height: 25vw;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(20px, 8vw, 40px);
+}
+.bigBox-1 img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foto-box{
+  display: flex;
+  justify-content: center;
+}
+.fa-pencil:hover{
+  opacity: 80%;
+  font-size: clamp(17px, 7vw, 37px);
+  cursor: pointer;
+}
+.foto-input{
+  opacity: 0;
+  size: 0px;
+}
+
+#image-preview{
+  display: flex;
+  justify-content: center;
+  width: 0px; 
+  height: 0px;
+  opacity: 0;
+}
+
+.harga, .Nama, .Description{
+  display: flex;
+}
+input{
+  width: 100%;
+}
+table{
+  height: 2.5vw;
+  width: 100%;
+}
+.add-button{
+  background-color: #392A2A;
+  outline: none;
+  border: none;
+}

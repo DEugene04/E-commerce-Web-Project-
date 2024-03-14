@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #F9F1E9;
+  background-image: url(background.png);
+  background-size: cover;
+  background-position: center;
+  font-family: "Noto Serif", serif;
+}
+
+/* navbar css */
+.navBar{
+  margin-top: 1rem;
+  overflow: hidden;
+  background-color: transparent;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+}
+.left-navbar, .right-navbar{
+  display: flex;
+  justify-content: space-around;
+}
+a{
+  color: #392A2A;
+}
+.logo img{
+  height: 4vw;
+  width: 4vw;
+}
+
+/* Jumbotron css */
+
+.main-title {
+  background-color: transparent;
+  position: relative;
+}
+.main-title h1{
+  font-size: clamp(30px, 8vw, 100px)
+}
+#welcome-text{
+  font-size: clamp(30px, 4vw, 40px);
+  margin-top: 3rem;
+}
+.main-title p{
+  font-size: clamp(8px, 1vw, 16px);
+}
+.left-abstract{
+  position: absolute;
+  top: 0px;
+  left: -30px;
+}
+.left-abstract img{
+  height: 400px;
+}
+.down-arrow {
+  margin-top: 2em;
+  margin-bottom: 2rem;
+}
+.down-arrow img{
+  height: 10vh;
+}
+
+/* category css */
+.gender{
+  display: flex;
+  gap: 1.5rem;
+}
+.gender-btn{
+  font-size: clamp(10px, 2vw, 35px);
+  margin-bottom: 1rem;
+}
+#men-btn{
+  background-color: #392A2A;
+  outline: none;
+  border: none;
+}
+#women-btn{
+  background-color: transparent;
+  border: 1px solid #392A2A;
+  color: #392A2A;
+}
+.row{
+  display: flex;
+}
+.category{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #392A2A;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: clamp(10px, 1.6vw, 35px);
+  opacity: 70%;
+}
+.category a{
+  text-decoration: none;
+}
+.bold{
+  font-weight: 700;
+  opacity: 100%;
+}
+
+/* product showcase css */
+.card-container{
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.card {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+.card img{
+  width: 13vw;
+  height: 15vw;
+}
+.card p{
+  margin-bottom: 0px;
+}
+.price{
+  display: flex;
+  flex-direction: column;
+}
+.price-text{
+  font-size: clamp(12px, 3vw, 20px)
+}
+.new-product, .other-products, .on-sale{
+  margin-top: 4rem;
+}
+.product-row-title{
+  font-size: clamp(20px, 4vw, 40px);
+}
+.invert-arrow img{
+  transform: rotate(180deg);
+  height: 5vw;
+}
